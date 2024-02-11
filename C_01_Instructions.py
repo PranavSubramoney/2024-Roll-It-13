@@ -49,7 +49,7 @@ print()
 
 # loop for testing purposes
 
-want_instructions = yes_no("Do you want to read the instructions? ")
+want_instructions = yes_no("Do you want to read the instructions? (Enter yes or no) ")
 
 # checks users enter (y) or (n)
 if want_instructions == "yes":
