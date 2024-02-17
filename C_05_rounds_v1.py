@@ -55,9 +55,8 @@ computer_points = computer_first[0]
 
 print(f"The computer rolled a total of {computer_points}.")
 
-
 #loop (while both user / computer have <= 13 points)...
-while computer_points <= 13 and user_points <= 13:
+while computer_points < 13 and user_points < 13:
 
     # asks user if they want to roll again, update
     #points / status
@@ -85,6 +84,9 @@ while computer_points <= 13 and user_points <= 13:
 
     print(f"***Round Update****; {result} ")
     print(f"User Score: {user_points} \t | \t Computer Score: {computer_points}")
+
+
+
 
 
 
