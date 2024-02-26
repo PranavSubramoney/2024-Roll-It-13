@@ -103,8 +103,8 @@ def get_stats(stats_list):
 
     # find lowest, highest and average score...
     lowest_score = user_scores[0]
-    highest_score = user_scores[-1]
-    average_score = sum(user_scores) / len(user_scores)
+    highest_score = stats_list[-1]
+    average_score = sum(stats_list) / len(stats_list)
 
     return [lowest_score, highest_score, average_score]
 
@@ -279,6 +279,7 @@ while user_score < target_score and comp_score < target_score:
 
         add_points = user_points
 
+    # Record round result and add it to the game history
     round_result = f"Round {num_rounds} - User: {user_points} \t Computer: {computer_points}"
     game_history.append(round_result)
 
